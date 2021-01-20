@@ -10,7 +10,7 @@ from datetime import datetime
 import tensorflow as tf
 from tensorflow import keras
 
-df = pd.read_csv("/home/sunbeam/Documents/STOCK_DATASETS_FINAL/AAPL.csv")
+df = pd.read_csv("AAPL.csv")
 pre_date =pd.Series(pd.date_range(datetime.today(), periods=30))
 x = df['Date']
 y = df['Close']
